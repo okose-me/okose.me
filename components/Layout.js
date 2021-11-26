@@ -12,8 +12,7 @@ export default function Layout({children}) {
                 max-width: 36rem;
                 margin: 0 auto;
                 padding: 1.5rem;
-                 font-family: 'Inter', sans-serif;
-                 color: #52525b;
+                color: #52525b;
               }
             `}</style>
             <style jsx global>{`
