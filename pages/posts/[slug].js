@@ -26,15 +26,8 @@ const components = {
 export default function PostPage({ source, frontMatter }) {
   return (
     <Layout>
-      <header>
-        <nav>
-          <Link href="/">
-            <a>👈 Go back home</a>
-          </Link>
-        </nav>
-      </header>
       <div className="post-header">
-        <h1>{frontMatter.title}</h1>
+        <h2>{frontMatter.title}</h2>
         {frontMatter.description && (
           <p className="description">{frontMatter.description}</p>
         )}
@@ -42,6 +35,13 @@ export default function PostPage({ source, frontMatter }) {
       <main>
         <MDXRemote {...source} components={components} />
       </main>
+      <header className="goBackHome">
+        <nav>
+          <Link href="/">
+            <a>👈 Go back home</a>
+          </Link>
+        </nav>
+      </header>
 
       <style jsx>{`
         .post-header h1 {
@@ -49,10 +49,18 @@ export default function PostPage({ source, frontMatter }) {
         }
 
         .post-header {
-          margin-bottom: 2rem;
+             border-top: 0.1em dashed rgb(0 0 0 / 40%);
+    margin-bottom: 2rem;
+    padding-top: 15px;
         }
         .description {
           opacity: 0.6;
+        }
+        
+        .goBackHome{
+          border-top: 0.1em dashed rgb(0 0 0 / 40%);
+    margin-bottom: 2rem;
+    padding-top: 15px;
         }
       `}</style>
     </Layout>

@@ -1,49 +1,56 @@
-export default function Layout({ children }) {
-  return (
-    <>
-      <div className="wrapper">{children}</div>
-      <style jsx>{`
-        .wrapper {
-          max-width: 36rem;
-          margin: 0 auto;
-          padding: 1.5rem;
-        }
-      `}</style>
-      <style jsx global>{`
-        * {
-          margin: 0;
-          padding: 0;
-        }
+import Hero from "./Hero";
 
-        :root {
-          --site-color: royalblue;
-          --divider-color: rgba(0, 0, 0, 0.4);
-        }
+export default function Layout({children}) {
+    return (
+        <>
+            <div className="wrapper">
+                <Hero name="Oktay"/>
+                {children}
+            </div>
+            <style jsx>{`
+              .wrapper {
+                max-width: 36rem;
+                margin: 0 auto;
+                padding: 1.5rem;
+                 font-family: 'Inter', sans-serif;
+                 color: #52525b;
+              }
+            `}</style>
+            <style jsx global>{`
+              * {
+                margin: 0;
+                padding: 0;
+              }
 
-        html {
-          font: 100%/1.5 system-ui;
-        }
+              :root {
+                --site-color: royalblue;
+                --divider-color: rgba(0, 0, 0, 0.4);
+              }
 
-        a {
-          color: inherit;
-          text-decoration-color: var(--divider-color);
-          text-decoration-thickness: 2px;
-        }
+              html {
+                font: 100%/1.5 system-ui;
+              }
 
-        a:hover {
-          color: var(--site-color);
-          text-decoration-color: currentcolor;
-        }
+              a {
+                color: inherit;
+                text-decoration-color: var(--divider-color);
+                text-decoration-thickness: 2px;
+              }
 
-        h1,
-        p {
-          margin-bottom: 1.5rem;
-        }
+              a:hover {
+                color: var(--site-color);
+                text-decoration-color: currentcolor;
+              }
 
-        code {
-          font-family: 'Menlo';
-        }
-      `}</style>
-    </>
-  )
+              h1,
+              p {
+                margin-bottom: 1.5rem;
+              }
+
+              code {
+                font-family: 'Menlo';
+              }
+            `}</style>
+        </>
+    )
 }
