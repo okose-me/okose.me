@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
         <>
             <Head>
                 <title>Oktay KÖSE - Software Developer</title>
-                <meta name="description" content="An artificial intelligence service that simplifies your complex data and interprets it with simple expressions." />
+                <meta name="description" content="I share everything I learned new in this mini blog." />
                 <link rel="icon" href="img/favicon.png"/>
             </Head>
             <Component {...pageProps} />
