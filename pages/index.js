@@ -29,13 +29,13 @@ export default function Index({posts}) {
               }
 
               .post {
-                background: #fef2c7;
-                color: rgba(120, 53, 15, 1);
+                background: #eeeeee;
                 font-weight: 400;
                 padding: 10px;
                 border-radius: 0.2em;
                 list-style: none;
                 margin-bottom: 10px;
+                color: rgb(0 0 0 / 60%);
               }
 
               .post-link {
