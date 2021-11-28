@@ -13,6 +13,7 @@ export default function Layout({children}) {
                 margin: 0 auto;
                 padding: 1.5rem;
                 color: #52525b;
+                margin-top: 30px;
               }
             `}</style>
             <style jsx global>{`
