@@ -10,7 +10,7 @@ export default function Index({posts}) {
     return (
         <>
             <Layout>
-                <ul className="posts">
+                {/*<ul className="posts">
                     {posts.map((post) => (
                         <li className="post" key={post.filePath}>
                             <Link
@@ -21,7 +21,7 @@ export default function Index({posts}) {
                             </Link>
                         </li>
                     ))}
-                </ul>
+                </ul>*/}
             </Layout>
             <style jsx>{`
               .posts {
